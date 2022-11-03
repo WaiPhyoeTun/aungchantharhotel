@@ -1,0 +1,306 @@
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+
+body{
+  font-family:sans-serif;
+}
+
+/* Start Header Section */
+header{
+  height:95vh;
+  /* background-image:url('./../assets/img/banner/banner8.jpg'); */
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  position:relative;
+  transition:all 2s linear;
+}
+/* Start Navbar */
+.navbar{
+  background:linear-gradient(to right ,rgba(0,0,0,1),rgba(0,0,0,0.5));
+  z-index: 100;
+}
+
+.nav-link{
+  color:#fff !important;
+  font-size:16px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover{
+  box-shadow:none;
+}
+
+.dropdowns{
+  position:relative;
+}
+
+.dropbtn:hover{
+  background:none !important;
+}
+
+.dropdown-contents{
+  width:230px;
+  background-color:#f4f4f4;
+  position:absolute;
+  left: 50%;
+
+  z-index:10;
+  display:none;
+}
+
+.dropdown-contents.show{
+  display:block;
+}
+
+.dropdown-contents .search{
+  width:100%;
+  background-image:url('./../assets/img/icon/searchicon.png');
+  background-repeat:no-repeat;
+  background-position:10px center;
+  border:none;
+  outline:none;
+  padding:10px 5px 10px 40px;
+  font-size:17px;
+  border-bottom:1px solid #ddd;
+}
+
+.dropdown-contents a{
+  display:block;
+  text-decoration:none;
+  color:#333;
+  padding:10px;
+}
+
+.dropdown-contents a:hover{
+  background:#ddd;
+}
+
+/* End Navbar */
+
+/* Start Banner Section */
+.banners{
+  color:#fff;
+  font-weight:900;
+  text-align:center;
+
+  position:absolute;
+  left:50%;
+  top:50%;
+
+  transform:translate(-50%,-50%);
+}
+
+.bannerheaders{
+min-width:600px;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3));
+border:2px dashed #fff;
+padding:20px;
+box-shadow:10px 10px 100px 20px #000;
+animation-name:bnani;
+animation-duration:2s;
+}
+
+.bannerparagraphs{
+animation-name:bnani;
+animation-duration:2s;
+animation-delay:0.5s;
+animation-fill-mode:backwards;
+}
+
+@keyframes bnani{
+from{
+  transform:translateY(100px);
+  opacity:0;
+}
+to{
+  transform:translateY(0);
+  opacity:1;
+}
+}
+/* End Banner Section */
+
+/* End Header Section */
+
+/* Start Booking Section  */
+.search-rooms{
+width:80%;
+background:linear-gradient(to left,skyblue,steelblue);
+margin-top:-60px;
+padding:30px 0;
+position:absolute;
+left:50%;
+
+transform:translateX(-50%);
+}
+
+.search-rooms .form-control{
+max-width:20%;
+display:inline;
+margin:10px 5px;
+border-radius:0;
+border:none;
+}
+
+.search-rooms .form-control:focus{
+box-shadow:none;
+}
+
+.search-rooms input[type=text]{
+width:200px;
+transition:all 0.3s ease-in-out;
+}
+
+.search-rooms input[type=text]:focus{
+width:100%;
+}
+/* End Booking Section */
+
+/* Start Rooms Section  */
+.rows{
+display:flex;
+flex-wrap:wrap;
+}
+
+.columns{
+max-width:25%;
+padding:0 8px;
+}
+
+.columns img{
+width:100%;
+margin:5px;
+}
+
+.columns img:hover{
+opacity:0.8;
+}
+
+@media(max-width:800px){
+.columns{
+  max-width:50%;
+}
+}
+/* End Rooms Section */
+
+/* Start Our Service Section */
+.iconboxs{
+background-color:#fff;
+box-shadow:0 3px 20px rgba(0,0,0,0.2);
+padding:50px 20px;
+margin-bottom:10px;
+position:relative;
+}
+
+.iconboxs::before{
+content:'';
+width:100%;
+height:5%;
+background-color:purple;
+
+position:absolute;
+left:0;
+bottom:0;
+
+transition:height 0.3s ease-in;
+}
+
+.iconboxs:hover::before{
+height:8%;
+}
+
+.icons{
+  width:70px;
+  height:70px;
+  background-color:purple;
+  color:#fff;
+
+  display:grid;
+  place-items:center;
+
+  position:absolute;
+  top:-35px;
+  left:calc(50% - 35px);
+
+  /* transform:translateX(-50%); */
+  transform:rotate(45deg);
+  transition:all 0.3s ease-in;
+}
+
+.icons i{
+transform:rotate(-45deg);
+}
+
+.iconboxs:hover .icons{
+background:none;
+color:purple;
+border:2px solid purple;
+}
+
+/* End Our Service Section */
+
+
+/* Start Testimonitals Section */
+
+.testimonial-container{
+  position: relative;
+}
+
+.fa-quotes{
+  color: rgba(255, 255, 255, 3);
+  font-size: 28px;
+  
+  position: absolute;
+  top: 0;
+}
+
+.fa-quote-right{
+  left: 0;
+}
+.fa-quote-left{
+  right: 0;
+}
+
+.testimonial{
+line-height: 30px;
+
+}
+.progress-bar{
+  width: 100%;
+  height: 4px;
+  background-color: tomato;
+  transform-origin: left;
+  animation-name: myincrement;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes myincrement{
+  0%{
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Testimonitals Seciton */
