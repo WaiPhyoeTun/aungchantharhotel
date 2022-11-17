@@ -94,10 +94,11 @@ setInterval(autoload,2500);
 
 // Start Testimonial Seciton 
 const getcompanyname = document.querySelector('.companyname');
-const getrole = document.querySelector('role');
-const gettestimonial = document.querySelector('testimonial');
+const getrole = document.querySelector('.role');
+const gettestimonial = document.querySelector('.testimonial');
 
-const testimonialdata = [
+
+const testimonialdatas = [
     {
         name:'Rich Star Restaurant',
         position:'Our Partner',
@@ -127,11 +128,34 @@ const testimonialdata = [
 ];
 
 let idx = 0;
+// console.log(testimonialdatas[idx]);
+// console.log(testimonialdatas[idx].name);
+// console.log(testimonialdatas[idx].position);
+// console.log(testimonialdatas[idx].text);
 
 function updatetestimonial(){
+    // getcompanyname.textContent = testimonialdatas[idx].name;
+    // getrole.text = testimonialdatas[idx].position;
+    // gettestimonial.textContent = testimonialdatas[idx].text;
 
+    const {name,position,text} = testimonialdatas[idx];
+    // console.log(name);
+    // console.log(position);
+    // console.log(text);
+
+    getcompanyname.textContent = name;
+    getrole.textContent = position;
+    gettestimonial.textContent = text;
+
+    idx++;
+
+    if(idx > testimonialdatas.length -1){
+        idx = 0;
+    }
 }
+updatetestimonial();
 setInterval(updatetestimonial,10000);
+
 
 
 
