@@ -539,7 +539,7 @@ line-height: 30px;
   color: #777;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
 
 /* End Chat Box */
