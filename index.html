@@ -28,10 +28,10 @@
                 <div id="navbarcollapse" class="navbar-collapse collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Room</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Restorant</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
+                        <li class="nav-item"><a href="#blog" class="nav-link">Blogs</a></li>
+                        <li class="nav-item"><a href="#service" class="nav-link">Restorant</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                         <li class="nav-item dropdowns">
                             <a href="#" class="nav-link dropbtn" onclick="dropbtn(event)">FAQ</a>
                             <div id="" class="dropdown-contents">
@@ -102,7 +102,7 @@
 
 
     <!-- Start room secttion -->
-    <section id="room" class="py-3 row-cols-sm-1 mt-5">
+    <section id="rooms" class="py-3 row-cols-sm-1 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -140,7 +140,7 @@
     </section>
     <!-- End room section -->
     <!-- Start Our Service Section -->
-    <section id="services" class="text-center py-5">
+    <section id="service" class="text-center py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">                   
@@ -479,6 +479,271 @@
 
 <!-- End Property Section  -->
 
+<!-- Start Contact Section  -->
+<section id="contact" class="bg-dark py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 d-sm-none d-md-block">
+                <div class="textboxs">
+
+                    <div id="phone" class="tabcontents">
+                        <h1>Phone</h1>
+                        <p>Office: 09 4220 4222 5</p>
+                        <p>Office: 09 4220 4228</p>
+                    </div>
+
+                    <div id="social" class="tabcontents">
+                        <h1>Social</h1>
+                        <p>Viber: @aungchaungtar</p>
+                        <p>Line: @aungchaungtar</p>
+                    </div>
+
+                    <div id="website" class="tabcontents">
+                        <h1>Website</h1>
+                        <p>Website: www.aungchaungtar.com</p>
+                        <p>Email: admin@aungchaungtar.com</p>
+                    </div>
+
+                    <div id="address" class="tabcontents">
+                        <h1>Address</h1>
+                        <p>No.170 ,Between 102/103 , Mandalay , Myanmar</p>
+                      
+                    </div>
+
+                    <button type="button" class="btn-tabs" id="autoclick" onclick="tabbox('phone',event.target,'grey')">Phone</button>
+                    <button type="button" class="btn-tabs" onclick="tabbox('social',event.target,'slateblue')">Social</button>
+                    <button type="button" class="btn-tabs" onclick="tabbox('website',this,'slategray')">Website</button>
+                    <button type="button" class="btn-tabs" onclick="tabbox('address',this,'steelblue')">Address</button>
+
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Please Fill Out this Form to contact us</h4>
+                        <hr>
+                        <form action="" method="">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" name='firstname' id='firstname' class="form-control form-control-sm rounded-0" placeholder="First Name"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" name='lastname' id='lastname' class="form-control form-control-sm rounded-0" placeholder="Last Name"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="email" name='email' id='email' class="form-control form-control-sm rounded-0" placeholder="Email"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" name='phone' id='phone' class="form-control form-control-sm rounded-0" placeholder="Phone"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control rounded-0" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid">
+                                    <input type="submit" class="btn btn-outline-secondary">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- End Contact Section  -->
+
+<!-- Start Pricing Section  -->
+
+<section id="pricing" class="py-3">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h4>Our Pricing</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card text-center">
+
+                    <div class="card-header" bg-dark text-white>
+                        <h3>Single Room</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <h4>$100</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fas fa-check">Wi-Fi</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Parking</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Pool</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Fitness Center</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Spa</i></li>
+                        </ul>
+
+                        <div class="d-gird">
+                            <a href="#" class="btn btn-dark">Check Out</a>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <b>Airport Transportation Free</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+<!-- 2--------------------------------------------------------- -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card text-center">
+
+                    <div class="card-header" bg-dark text-white>
+                        <h3>Deluxe Room</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <h4>$150</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fas fa-check">Wi-Fi</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Parking</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Pool</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Fitness Center</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Spa</i></li>
+                        </ul>
+
+                        <div class="d-gird">
+                            <a href="#" class="btn btn-dark">Check Out</a>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <b>Airport Transportation Free</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 3--------------------------------------------------  -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card text-center">
+
+                    <div class="card-header" bg-dark text-white>
+                        <h3>Family Room</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <h4>$200</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fas fa-check">Wi-Fi</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Parking</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Pool</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Fitness Center</i></li>
+                            <li class="list-group-item"><i class="fas fa-check">Spa</i></li>
+                        </ul>
+
+                        <div class="d-gird">
+                            <a href="#" class="btn btn-dark">Check Out</a>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <b>Airport Transportation Free</b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- End Pricing Section  -->
+
+<!-- Start footer Section -->
+<footer class="bg-dark pt-3">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link text-muted px-2">Home</a></li>
+        <li class="nav-item"><a href="#rooms" class="nav-link text-muted px-2">Rooms</a></li>
+        <li class="nav-item"><a href="#pricing" class="nav-link text-muted px-2">Pricing</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link text-muted px-2">Contact</a></li>
+        <li class="nav-item"><a href="#blog" class="nav-link text-muted px-2">FAQs</a></li>
+    </ul>
+
+    <div class="text-white d-flex justify-content-center">
+        <p>&copy; <span id="getyear"></span>Copyright, Inc All right reserved</p>
+    </div>
+</footer>
+<!-- End footer Section -->
+
+
+    <!-- Start Chat Box -->
+    <button class="chat-btn" onclick="openchatbox()"><i class="fas fa-comment-alt"></i></button>
+
+    <div id="mychat" class="chat-popup">
+        <div class="chat-container">
+            <h4>Chat</h4>
+
+            <div class="messages">
+
+                <div class="container admin">
+                    <p>Hello! How can i help you?</p>
+                    <span class="time-right">13:00</span>
+                </div>
+
+                <div class="containers user">
+                    <p>Thanks for your reply!</p>
+                    <span class="time-right">13:01</span>
+                </div>
+
+                <div class="containers admin">
+                    <p>Do you want to reserve room?</p>
+                    <span class="time-right">13:03</span>
+                </div>
+                
+                <div class="containers user">
+                    <p>Sure! let me seet the price for montain view.</p>
+                    <span class="time-right">13:04</span>
+                </div>
+            </div>
+
+            <form class="form-container" action="" method="">
+                <textarea name="message" id="message" class="message" placeholder="Message Here..."></textarea>
+
+                <button type="submit" class="btns">Send</button>
+                <button type="button" class="btns" onclick="closechatbox()">Close</button>
+            </form>
+        </div>
+    </div>
+    <!-- End Chat Box -->
+
+
     <!-- bootstrap css 1 js 1 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!-- Jquery js1 -->
@@ -492,3 +757,5 @@
 
 
 <!-- 21PP -->
+
+<!-- 16FN -->

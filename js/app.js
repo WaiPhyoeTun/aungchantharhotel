@@ -2,10 +2,17 @@
 $(document).ready(function(){
     //Start Room Section 
     $('.roompopup').magnificPopup({type:'image'});
-    //En Room Section 
+    //End Room Section 
 
 });
+
+
+
+
 // End Jquery Area
+
+
+
 
 // Star Header
 // Start nab bar
@@ -261,6 +268,58 @@ for(var i = 0 ; i < getlis.length;i++){
 }
 
 // End Properties Section
+
+// Start Contact Section 
+
+function tabbox(link,even,btncolor){
+    var gettabcontents = document.getElementsByClassName('tabcontents');
+    var getbtntabs = document.getElementsByClassName('btn-tabs');
+    for(var i=0; i < gettabcontents.length; i++){
+        gettabcontents[i].style.display = 'none';
+        getbtntabs[i].style.backgroundColor = ' ';
+    }
+    document.getElementById(link).style.display = 'block';
+    even.style.backgroundColor = btncolor;
+    // console.log(evn);
+}
+//tabbox('phone')
+document.getElementById('autoclick').click();
+
+// End Contact Section 
+
+// Start Chat Box
+
+const getmychat = document.getElementById('mychat');
+
+function openchatbox(){
+    getmychat.style.display = 'block';
+}
+function closechatbox(){
+    getmychat.style.display = 'none'
+}
+
+
+
+
+// End Chat Box
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 3TM
 
